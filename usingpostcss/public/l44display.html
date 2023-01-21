@@ -34,13 +34,26 @@
     
     <h1>This is Tailwind css</h1>
 
+    <h1>flex</h1>
     <div class="box flex">
         <div class="div1">1</div>
         <div class="div2">2</div>
     </div>
 
     <br/>
+    <br/>
 
+    <h1>grid</h1>
+    <div class="box grid">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+
+    <h1>justify-content - (Flex)(Grid) - (Parent မှာသုံးတာ)</h1> <!--grid,flex 2ခုလုံးသုံးလို့ရ -->
     <div class="box flex justify-start">
         <div class="div1">1</div>
     </div>
@@ -65,11 +78,15 @@
     </div>
 
     <br/>
+    <br/>
+    <hr/>
 
+    <h1>align-items (P)</h1>
     <div class="bigbox flex items-start">
         <div class="div1">1</div>
     </div>
 
+    <br/>
     <br/>
 
     <div class="bigbox flex items-center">
@@ -77,13 +94,17 @@
     </div>
 
     <br/>
+    <br/>
 
     <div class="bigbox flex items-end">
         <div class="div1">1</div>
     </div>
 
     <br/>
+    <br/>
+    <hr/>
 
+    <h1>justify-content and align-items (P)</h1>
     <div class="bigbox flex justify-center items-center">
         <div class="div1">1</div>
     </div>
@@ -109,6 +130,190 @@
     <span class="bg-sky-300 hidden">Bye Indonesia</span>
 
     <br/>
+    <br/>
+    <hr/>
+
+    <h1>justify-items - (G) - (P)</h1> <!--grid နဲ့ပဲသုံးလို့ရ flex မရ -->
+    <div class="bigbox grid justify-items-start">
+        <div class="div1"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid justify-items-center">
+        <div class="div1"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid justify-items-end">
+        <div class="div1"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid justify-items-stretch">
+        <div class="div1"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+
+    <h1>justify-self (Gridပဲသူံးလို့ရ) - (Child)</h1>
+    <div class="bigbox grid">
+        <div class="div1 justify-self-start"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid">
+        <div class="div1 justify-self-center"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid">
+        <div class="div1 justify-self-end"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid">
+        <div class="div1 justify-self-auto"></div>
+        <div class="div1"></div>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+
+    <h1>align-self (Flexနဲ့ပဲသုံးသင့်) - (Child)</h1>
+    <div class="bigbox flex">
+        <div class="div1">01</div>
+        <div class="div1 self-start">02</div>
+        <div class="div1">03</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox flex">
+        <div class="div1">01</div>
+        <div class="div1 self-center">02</div>
+        <div class="div1">03</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox flex">
+        <div class="div1">01</div>
+        <div class="div1 self-end">02</div>
+        <div class="div1">03</div>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+
+    <h1>align-content (G) - (P)</h1>
+    <div class="bigbox grid grid-cols-3 content-start" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-center" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-end" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-between" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-around" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-evenly" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bigbox grid grid-cols-3 content-baseline" style="height:300px";>
+        <div class="div1">01</div>
+        <div class="div1">02</div>
+        <div class="div1">03</div>
+        <div class="div2">04</div>
+        <div class="div2">05</div>
+        <div class="div2">06</div>
+    </div>
+
+    <br/>
+    <br/>
 
 
 
@@ -132,8 +337,55 @@ justify-around       justify-content:space-around;
 justify-evenly       justify-content:space-evenly;
  -->
 
+
+<!-- 
+justify-items-start             justify-items:start;
+justify-items-center            justify-items:center;
+justify-items-end               justify-items:end;
+
+justify-items-stretch           justify-items:stretch; item တွေကိုဆွဲဆန်ံ့ထားတာ
+ -->
+
+
+<!--  
+justify-self-auto               justify-self:auto;
+
+justify-self-start              justify-self:start;
+justify-self-center             justify-self:center;
+justify-self-end                justify-self:end;
+
+justify-self-stretch            justify-self:stretch;
+ -->
+
+
+
+
+
 <!-- 
 items-start         align-items:start;
 items-center        align-items:center;
 items-end           align-items:end;
  -->
+
+<!--  
+self-auto               align-self:auto;
+
+self-start              align-self:flex-start;
+self-center             align-self:center;
+self-end                align-self:flex-end;
+
+self-stretch            align-self:stretch;
+self-baseline            align-self:baseline;
+ -->
+
+<!-- 
+content-start                   align-content:flex-start;
+content-center                  align-content:center;
+content-end                     align-content:flex-end;
+
+content-between                 align-content:space-between;
+content-around                  align-content:space-around;
+content-evenly                  align-content:space-evenly; // same as space-around
+content-baseline                align-content:baseline;
+ -->
+
