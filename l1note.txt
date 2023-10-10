@@ -8,14 +8,14 @@ Integrate Methods
 
 
 Terminal = VS code
+Nodejs
+
+For Linux
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nodejs
 
 node -v (version စစ်)
-
-
-
-
-
-
 
 CDN
 
@@ -55,6 +55,7 @@ tailwindcss ချိတ်မချိတ်သိချင်ရင် h1 န�
 =>open folder "usingpostcss"
 =>open new terminal
 npm install -D tailwindcss postcss autoprefixer
+sudo npm install npm (linux မှာအပေါ်ကcode runလိုက်ရင် npmမတွေ့မှာ installလုပ်ပေးရမှာ)
 
 => create tailwind.config file
 npx tailwindcss init
